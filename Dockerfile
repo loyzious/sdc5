@@ -15,6 +15,9 @@ COPY requirements.txt .
 # Install application dependencies from the requirements file
 RUN pip install -r requirements.txt
 
+# fixing protobuf error from tensorflow
+COPY ./builder.py /usr/local/lib/python3.8/site-packages/google/protobuf/internal/
+
 # Copy every file in the source folder to the created working directory
 COPY  . .
 
