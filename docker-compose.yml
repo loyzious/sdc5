@@ -2,8 +2,7 @@ version: '3'
 services:
   sdc_5:
     build: .
-    image: loyzious/sdc_5_dash_ml_fastapi:v.0.1.0
-    # https://hub.docker.com/r/loyzious/sdc_5/
+    image: loyzious/sdc_5_streamlit_ml_fastapi:v.0.1.0
     ports:
       #- '8000:8000'
       #- '8501:8501'
