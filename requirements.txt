@@ -1,12 +1,8 @@
 fastapi
 uvicorn
-pandas
+pydantic
+streamlit
 requests
-seaborn
-matplotlib
 numpy
 tensorflow-cpu
-image
-dash
-plotly.express
-
+protobuf
