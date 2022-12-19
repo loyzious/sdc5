@@ -19,6 +19,9 @@ RUN pip install -r requirements.txt
 COPY  . .
 
 EXPOSE ${STREAMLIT_SERVER_PORT}
+#EXPOSE 8000
+#EXPOSE 8050
 
 # Run the python application
-CMD ["python","startup.py"]
+#CMD ["python","startup.py"]
+CMD ["streamlit", "run", "dashboard.py"]
