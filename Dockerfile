@@ -22,7 +22,7 @@ COPY ./builder.py /usr/local/lib/python3.8/site-packages/google/protobuf/interna
 COPY  . .
 
 EXPOSE ${STREAMLIT_SERVER_PORT}
-#EXPOSE 8000
+EXPOSE ${FASTAPI_SERVER_PORT}
 #EXPOSE 8050
 
 # Run the python application
