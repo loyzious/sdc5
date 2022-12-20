@@ -18,7 +18,7 @@ if st.button('Predict!'):
     params = {
         'image_link': input_url,
     }
-    response = requests.post('http://sdc_5:8000/net/image/prediction', params=params, headers=headers)
+    response = requests.post('http://0.0.0.0:8000/net/image/prediction', params=params, headers=headers)
     
     st.subheader(f"API response:\n{response.text}")  
 
